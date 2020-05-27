@@ -1,0 +1,20 @@
+﻿  Kursach.cpp
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(55,6): warning C4101: NumberOfEquipment: неиспользованная локальная переменная
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(57,6): warning C4101: Price: неиспользованная локальная переменная
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(56,6): warning C4101: SerialNumber: неиспользованная локальная переменная
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(102,23): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(124,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(141,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(150,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(163,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(207,22): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(171,7): warning C4101: NumberOfEquipment: неиспользованная локальная переменная
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(173,7): warning C4101: Price: неиспользованная локальная переменная
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(172,7): warning C4101: SerialNumber: неиспользованная локальная переменная
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(226,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(236,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(250,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(252,21): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(266,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(280,11): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
+  Kursach.vcxproj -> C:\Users\toxa\source\repos\Kursach\Debug\Kursach.exe
