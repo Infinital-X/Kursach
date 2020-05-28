@@ -1,0 +1,2 @@
+C:\Users\toxa\source\repos\Kursach\Debug\Kursach.exe.lastcodeanalysissucceeded
+C:\Users\toxa\source\repos\Kursach\Kursach\Debug\NativeCodeAnalysis.read.1.tlog
