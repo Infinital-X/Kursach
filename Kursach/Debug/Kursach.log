@@ -1,32 +1,12 @@
 ﻿  addNew.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\addNew.cpp(21,6): warning C4101: NumberOfEquipment: неиспользованная локальная переменная
-C:\Users\toxa\source\repos\Kursach\Kursach\addNew.cpp(23,6): warning C4101: Price: неиспользованная локальная переменная
-C:\Users\toxa\source\repos\Kursach\Kursach\addNew.cpp(22,6): warning C4101: SerialNumber: неиспользованная локальная переменная
   edit.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\edit.cpp(19,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\toxa\source\repos\Kursach\Kursach\edit.cpp(63,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\toxa\source\repos\Kursach\Kursach\edit.cpp(27,7): warning C4101: NumberOfEquipment: неиспользованная локальная переменная
-C:\Users\toxa\source\repos\Kursach\Kursach\edit.cpp(29,7): warning C4101: Price: неиспользованная локальная переменная
-C:\Users\toxa\source\repos\Kursach\Kursach\edit.cpp(28,7): warning C4101: SerialNumber: неиспользованная локальная переменная
   getInfo.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\getInfo.cpp(23,23): warning C4018: <: несоответствие типов со знаком и без знака
   Kursach.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\Kursach.cpp(65,11): warning C4244: инициализация: преобразование "std::streamoff" в "int", возможна потеря данных
   outputAll.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\outputAll.cpp(23,21): warning C4018: <: несоответствие типов со знаком и без знака
   priceForAll.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\priceForAll.cpp(19,20): warning C4018: <: несоответствие типов со знаком и без знака
   remove.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\remove.cpp(18,22): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\toxa\source\repos\Kursach\Kursach\remove.cpp(28,22): warning C4018: <: несоответствие типов со знаком и без знака
   search.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\search.cpp(22,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\toxa\source\repos\Kursach\Kursach\search.cpp(32,21): warning C4018: <: несоответствие типов со знаком и без знака
   sorting.cpp
-C:\Users\toxa\source\repos\Kursach\Kursach\sorting.cpp(20,20): warning C4018: <: несоответствие типов со знаком и без знака
-C:\Users\toxa\source\repos\Kursach\Kursach\sorting.cpp(22,21): warning C4018: <: несоответствие типов со знаком и без знака
   Компиляция...
   Создание кода...
   Kursach.vcxproj -> C:\Users\toxa\source\repos\Kursach\Debug\Kursach.exe
-C:\Users\toxa\source\repos\Kursach\Kursach\getInfo.cpp(26): warning C26451: Арифметическое переполнение: использование оператора "*" на байтовом значении 4 и приведение результата к байтовому значению 8. Приведите значение к более широкому типу перед вызовом оператора "*", чтобы избежать переполнения (io.2).
-C:\Users\toxa\source\repos\Kursach\Kursach\outputAll.cpp(26): warning C26451: Арифметическое переполнение: использование оператора "*" на байтовом значении 4 и приведение результата к байтовому значению 8. Приведите значение к более широкому типу перед вызовом оператора "*", чтобы избежать переполнения (io.2).

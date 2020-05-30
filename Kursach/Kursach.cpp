@@ -2,23 +2,20 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
-#include <windows.h>
+#include "struct.h"
+#include "getInfo.h"
+#include "addNew.h"
+#include "outputAll.h"
+#include "priceForAll.h"
+#include "sorting.h"
+#include "search.h"
+#include "remove.h"
+#include "edit.h"
 using namespace std;
 const int NotUsed = system("color F0");
 
-struct Menu //Структура для меню
-{
-	int number;
-	const char* text;
-};
-
-struct  AccountingForEquipmentComposition //Главная структура
-{
-	char Equipment[30];
-	int NumberOfEquipment;
-	int SerialNumber;
-	int Price;
-};
+vector<AccountingForEquipmentComposition>EquipmentVector; //Объявляем вектор для удобной работы с элементами базы данных
+AccountingForEquipmentComposition  EquipmentElement; //Объявляем имя структуры
 
 Menu menu[] =
 {
@@ -46,14 +43,6 @@ int showMenu(const Menu* menu1) //Функция показывающая мен
 	return choice;
 }
 
-void addNew(vector<AccountingForEquipmentComposition>&EquipmentVector); //Функция которая добавляет новые элементы структуры и сохраняет их в файл
-void getInfo(vector<AccountingForEquipmentComposition>&EquipmentVector, int num); //Функция выводит элемент базы данных по его номеру
-void outputAll(vector<AccountingForEquipmentComposition>&EquipmentVector); //Функция выводит все элементы базы данных
-void remove(vector<AccountingForEquipmentComposition>&EquipmentVector, int num); //Функция удаляет элемент базы данных по его номеру
-void edit(vector<AccountingForEquipmentComposition>&EquipmentVector, int num); //Функция изменяет элемент базы данных по его номеру
-void search(vector<AccountingForEquipmentComposition>&EquipmentVector); //Функция выводит название элемента по его серийному номеру
-void sorting(vector<AccountingForEquipmentComposition>&EquipmentVector); //Функция сортирует файлы по цене методом пузырька
-void priceForAll(vector<AccountingForEquipmentComposition>&EquipmentVector); //Функция считает цену всего оборудования
 
 int main()
 {
@@ -62,16 +51,15 @@ int main()
 	begin = file.tellg(); //Начало файла
 	file.seekg(0, ios::end);
 	end = file.tellg(); //Конец файла
-	int size = (end - begin) / sizeof(AccountingForEquipmentComposition); //Размер файла
+	long long begend = end - begin;
+	int size3 = (int)begend / sizeof(AccountingForEquipmentComposition); //Размер файла
 	file.close();
 
-	vector<AccountingForEquipmentComposition>EquipmentVector; //Объявляем вектор для удобной работы с элементами базы данных
-	AccountingForEquipmentComposition  EquipmentElement; //Объявляем имя структуры
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i < size3; i++)
 		EquipmentVector.push_back(EquipmentElement); //Заполняем вектор
 
 	file.open("Equipment List.txt", ios::binary | ios::in | ios::app); //Открываем файл в бинарном режиме
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i < size3; i++)
 	{
 		file.read((char*)&EquipmentVector[i], sizeof(AccountingForEquipmentComposition));
 	}

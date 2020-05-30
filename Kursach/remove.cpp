@@ -2,20 +2,13 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
-#include <windows.h>
+#include "struct.h"
 using namespace std;
 
-struct  AccountingForEquipmentComposition //Главная структура
-{
-	char Equipment[30];
-	int NumberOfEquipment;
-	int SerialNumber;
-	int Price;
-};
 
-void remove(vector<AccountingForEquipmentComposition >& EquipmentVector, int num) //Функция удаляет элемент базы данных по его номеру
+void remove(vector<AccountingForEquipmentComposition >& EquipmentVector, unsigned int num) //Функция удаляет элемент базы данных по его номеру
 {
-	if (num >= 0 && num < EquipmentVector.size())
+	if (num < EquipmentVector.size())
 	{
 		auto iterator = EquipmentVector.begin();
 		EquipmentVector.erase(iterator + num); //Удаляем элемент из вектора
@@ -25,7 +18,7 @@ void remove(vector<AccountingForEquipmentComposition >& EquipmentVector, int num
 			cout << "File does not open";
 		else
 		{
-			for (int i = 0; i < EquipmentVector.size(); i++) //Перезаписываем все данные из вектора в файл
+			for (unsigned int i = 0; i < EquipmentVector.size(); i++) //Перезаписываем все данные из вектора в файл
 			{
 				file.write((char*)&EquipmentVector[i], sizeof(AccountingForEquipmentComposition));
 			}

@@ -2,25 +2,14 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
-#include <windows.h>
+#include "struct.h"
 using namespace std;
-
-struct  AccountingForEquipmentComposition //Главная структура
-{
-	char Equipment[30];
-	int NumberOfEquipment;
-	int SerialNumber;
-	int Price;
-};
 
 void addNew(vector<AccountingForEquipmentComposition >& EquipmentVector) //Функция которая добавляет новые элементы структуры и сохраняет их в файл
 {
 	AccountingForEquipmentComposition  EquipmentElement;
 
 	char Equipment[30];
-	int NumberOfEquipment;
-	int SerialNumber;
-	int Price;
 
 	cout << "Equipment: ";
 	cin.getline(EquipmentElement.Equipment, sizeof(Equipment));

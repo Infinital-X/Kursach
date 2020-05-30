@@ -2,21 +2,13 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
-#include <windows.h>
+#include "struct.h"
+#include "getInfo.h"
 using namespace std;
 
-struct  AccountingForEquipmentComposition //Главная структура
+void edit(vector<AccountingForEquipmentComposition >& EquipmentVector, unsigned int num) //Функция изменяет элемент базы данных по его номеру
 {
-	char Equipment[30];
-	int NumberOfEquipment;
-	int SerialNumber;
-	int Price;
-};
-void getInfo(vector<AccountingForEquipmentComposition>& EquipmentVector, int num); //Функция выводит элемент базы данных по его номеру
-
-void edit(vector<AccountingForEquipmentComposition >& EquipmentVector, int num) //Функция изменяет элемент базы данных по его номеру
-{
-	if (num >= 0 && num < EquipmentVector.size())
+	if (num < EquipmentVector.size())
 	{
 		cout << "Before change: \n";
 		getInfo(EquipmentVector, num);
@@ -24,9 +16,6 @@ void edit(vector<AccountingForEquipmentComposition >& EquipmentVector, int num) 
 		AccountingForEquipmentComposition  EquipmentElement;
 
 		char Equipment[30];
-		int NumberOfEquipment;
-		int SerialNumber;
-		int Price;
 
 		cout << endl << "Equipment: ";
 		cin.getline(EquipmentElement.Equipment, sizeof(Equipment));
@@ -60,7 +49,7 @@ void edit(vector<AccountingForEquipmentComposition >& EquipmentVector, int num) 
 		if (!file) //Проверка открыт ли файл
 			cout << "File does not open";
 		else {
-			for (int i = 0; i < EquipmentVector.size(); i++)
+			for (unsigned int i = 0; i < EquipmentVector.size(); i++)
 			{
 				file.write((char*)&EquipmentVector[i], sizeof(AccountingForEquipmentComposition));
 			}

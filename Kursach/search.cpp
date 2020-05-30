@@ -2,16 +2,8 @@
 #include <iomanip>
 #include <fstream>
 #include <vector>
-#include <windows.h>
+#include "struct.h"
 using namespace std;
-
-struct  AccountingForEquipmentComposition //Главная структура
-{
-	char Equipment[30];
-	int NumberOfEquipment;
-	int SerialNumber;
-	int Price;
-};
 
 void search(vector<AccountingForEquipmentComposition>& EquipmentVector) //Функция выводит название элемента по его серийному номеру
 {
@@ -19,7 +11,7 @@ void search(vector<AccountingForEquipmentComposition>& EquipmentVector) //Фун
 	bool found = false;
 	cout << "Enter serial number: ";
 	cin >> num;
-	for (int i = 0; i < EquipmentVector.size(); i++)
+	for (unsigned int i = 0; i < EquipmentVector.size(); i++)
 	{
 		if (num == EquipmentVector[i].SerialNumber)
 		{
@@ -29,7 +21,7 @@ void search(vector<AccountingForEquipmentComposition>& EquipmentVector) //Фун
 	}
 	if (found == true)
 	{
-		for (int i = 0; i < EquipmentVector.size(); i++)
+		for (unsigned int i = 0; i < EquipmentVector.size(); i++)
 		{
 			if (num == EquipmentVector[i].SerialNumber)
 			{
@@ -38,5 +30,5 @@ void search(vector<AccountingForEquipmentComposition>& EquipmentVector) //Фун
 			}
 		}
 	}
-	else cout << "Any equipment with so serial number" << endl;
+	else cout << "Wrong serial number" << endl;
 }

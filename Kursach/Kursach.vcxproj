@@ -157,6 +157,17 @@
     <ClCompile Include="search.cpp" />
     <ClCompile Include="sorting.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addNew.h" />
+    <ClInclude Include="edit.h" />
+    <ClInclude Include="getInfo.h" />
+    <ClInclude Include="outputAll.h" />
+    <ClInclude Include="priceForAll.h" />
+    <ClInclude Include="remove.h" />
+    <ClInclude Include="search.h" />
+    <ClInclude Include="sorting.h" />
+    <ClInclude Include="struct.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
